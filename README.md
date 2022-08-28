@@ -6,7 +6,11 @@
 [![Version](https://img.shields.io/badge/Version-v0.0.1a-informational?color=7289da&style=flat-square)](#synixia)
 [![LICENSE](https://img.shields.io/badge/LICENSE-GPL_3.0-informational?color=7289da&style=flat-square)](#synixia)
 
-SynixIA Is A OpenSource Code Discord Bot Project, Using [DiscordJS](https://github.com/discordjs/discord.js), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+SynixIA Is A OpenSource Code Discord Bot Project, Using [Node.js](https://nodejs.org/), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [DiscordJS](https://github.com/discordjs/discord.js).
+
+- Includes Dashboard
+- Very Optimized
+- Very Usefull
 
 ## Quick Links
 
