@@ -4,8 +4,14 @@
 
 [![Support Server Invite](https://img.shields.io/discord/923558169131749396.svg?color=7289da&label=SynixStudios&logo=discord&style=flat-square)](https://discord.gg/RfBbmrmegw)
 [![Version](https://img.shields.io/badge/Version-v0.0.1a-informational?color=7289da&style=flat-square)](#synixia)
-[![LICENSE](https://img.shields.io/badge/LICENSE-GPL-3.0-informational?color=7289da&style=flat-square)](#synixia)
+[![LICENSE](https://img.shields.io/badge/LICENSE-GPL_3.0-informational?color=7289da&style=flat-square)](#synixia)
 
-SynixIA Is A OpenSource Code Discord Bot Project, Using [DiscordJS](https://github.com/discordjs/discord.js) And [Discord Bot API](https://discord.com/developers/docs/intro).
+SynixIA Is A OpenSource Code Discord Bot Project, Using [DiscordJS](https://github.com/discordjs/discord.js), [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Quick Links
+
+- [LICENSE](https://github.com/Synix-Studios/SynixIA/blob/main/LICENSE.rst)
+
+###
+
+- [SetUp](https://docs.discord4j.com)
