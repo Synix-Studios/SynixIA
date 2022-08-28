@@ -1,5 +1,6 @@
 <div align="center">
-  <h2>SynixIA ~ Best Modern Designed Bot For Your Discord Server.</b>
+  <h1>SynixIA</b>
+  <h4>Best Modern Designed Bot For Your Discord Server.</b>
   
   <img src="https://wallpapers-hub.art/wallpaper-images/82704.jpg" width="600" alt="SynixIA"/>
 </div>
