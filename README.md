@@ -14,4 +14,4 @@ SynixIA Is A OpenSource Code Discord Bot Project, Using [DiscordJS](https://gith
 
 ###
 
-- [SetUp](wrtong)
+- [SetUp](#quick-links)
