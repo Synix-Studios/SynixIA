@@ -24,5 +24,7 @@ SynixIA Is A OpenSource Code Discord Bot Project, Using [Node.js](https://nodejs
 Commands To Install All Package Needed.
 
 ```sh-session
- npm  i
+git clone https://github.com/Synix-Studios/SynixIA
+cd SynixIA
+npm install
 ```
