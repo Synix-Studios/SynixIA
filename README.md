@@ -19,7 +19,7 @@ SynixIA Is A OpenSource Code Discord Bot Project, Using [Node.js](https://nodejs
 
 ## Installation
 
-**Node.js 16.9.0 or higher is required.**
+> NOTE: **Node.js 16.9.0 or higher is required.**
 
 Commands To Install All Package Needed.
 
