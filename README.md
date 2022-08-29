@@ -15,7 +15,4 @@ SynixIA Is A OpenSource Code Discord Bot Project, Using [Node.js](https://nodejs
 ## Quick Links
 
 - [LICENSE](https://github.com/Synix-Studios/SynixIA/blob/main/LICENSE.rst)
-
-###
-
 - [SetUp](#quick-links)
