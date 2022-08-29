@@ -12,6 +12,17 @@ SynixIA Is A OpenSource Code Discord Bot Project, Using [Node.js](https://nodejs
 - Very Optimized
 - Very Usefull
 
+```js
+/*
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ */
+```
+
 ## Links
 
 - [LICENSE](https://github.com/Synix-Studios/SynixIA/blob/main/LICENSE.rst)
@@ -24,7 +35,7 @@ SynixIA Is A OpenSource Code Discord Bot Project, Using [Node.js](https://nodejs
 
 ## Installation
 
-> Note: **Installing All Packages In [Requieriments](#requieriments) is required**
+> Note: **Installing All Packages In [Requieriments](#requieriments) Is Required**
 
 - Open the terminal and run the following commands
 
@@ -34,6 +45,112 @@ cd SynixIA
 npm install
 ```
 
-Wait for all the dependencies to be installed
-Fill THe config.js File
-Type `npm run start` or `npm run dev` to start the bot
+- Wait for all the dependencies to be installed
+- Fill THe [config.js](#configjs) File
+- Type `npm run start` or `npm run dev` to start the bot
+
+## Config.js
+
+```js
+/*
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ * NOTE: BEFORE USING THE CODE YOU SHOULD READ THIS ISSUE https://github.com/Synix-Studios/SynixIA/issues/2
+ */
+module.exports = {
+  main: {
+    _bot: {
+      _token: "", // bot token
+      _id: "", // bot id
+      _clientSecret: "", // bot clientSecret
+    },
+    _development: {
+      _isEnabled: false, // is in development?
+      _users: {
+        developers: [], // developers
+        allowed: [], // allowed
+      },
+    },
+    _default: {
+      _lang: {
+        user: "en_U", // default user lang
+        guild: "en_U", // default guild lang
+      },
+      _prefix: `.`, // default bot prefix
+    },
+    _keys: {
+      // Encrypting Datas Keys
+      _default: {
+        key: "",
+      },
+    },
+  },
+  profile: {
+    _status: {
+      /* Types: online, idle, invisible, dnd ~ DEFAULT: online*/
+      type: `idle`, // Discord Status
+    },
+    _rcp: {
+      /**
+       * 1 ActivityType.Playing
+       * 2 ActivityType.Listening
+       * 3 ActivityType.Watching
+       */
+      type: 2, // Type Of Activity In Enum Code
+      timeout: `5`, // Timeout Changing Message
+      _version: `| v1.3.5 Pre-ALPHA`, // Static
+      _messages: [
+        // Variable
+        `In {guilds} Servers`,
+        `With {users} Users`,
+        `{prefix}help`,
+        "I Am Currently Updating To .14!",
+      ],
+    },
+  },
+  database: {
+    /* Data Base URI (MONGODB) Changing To Other DB In Future*/
+    _authURI: "",
+  },
+  dashboard: {
+    _enabled: true /* Enable/Disable Dashboard ~ DEFAULT: false */,
+    _ports: {
+      /* Some Ports For Dashboard ~ DEFAULT: 80, 90 */
+      0: 80,
+      1: 90,
+      2: 3000,
+    },
+    _auth: {
+      redirectURI: "",
+    },
+  },
+  embeds: {
+    _colors: {
+      default: `0x2f3136`,
+      blurple: `0x5865F2`,
+      success: `0x57F287`,
+      warn: `0xFEE75C`,
+      error: `0xED4245`,
+    },
+  },
+  webhook: {
+    _discord: {
+      error: {
+        id: "",
+        token: "",
+      },
+      warn: {
+        id: "",
+        token: "",
+      },
+      ratelimit: {
+        id: "",
+        token: "",
+      },
+    },
+  },
+};
+```
