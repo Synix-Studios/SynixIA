@@ -1,5 +1,5 @@
 const { Client, Collection, GatewayIntentBits, Partials } = require('discord.js');
-
+const os = require('node:os');
 const client = new Client({
   restTimeOffset: 0,
   partials: [Partials.Message, Partials.Channel, Partials.Reaction, Partials.GuildMember, Partials.User, Partials.ThreadMember],
@@ -14,6 +14,7 @@ client.slashCommands = new Collection();
 client.events = new Collection();
 client.aliases = new Collection();
 
+client.os = os
 client.config = require("../config.js");
 client.log = require('./utils/tools/logger');
 client.fetchUser = require('./utils/tools/fetchUser');
