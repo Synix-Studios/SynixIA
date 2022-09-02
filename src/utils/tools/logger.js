@@ -106,7 +106,7 @@ exports.log = async (msg, type = 'log') => {
                     },
                     {
                         name: `Full:`,
-                        value: `\`\`\`[${dateNow}] - [${type}] ~ ${_file().filename}  ${msg}\`\`\``,
+                        value: `\`\`\`[${dateNow}] - [${type}] ~ [${_file().filename}]  ${msg}\`\`\``,
                     },
                 ],
             } // embed maker
