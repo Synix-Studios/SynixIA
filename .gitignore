@@ -1,5 +1,23 @@
+# Config File
 config.js
-package-lock.json
+
+# OSX
 .DS_Store
-node_modules
+.AppleDouble
+.LSOverride
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+# LOGS
 logs
+*.log
+
+# Dependency directory
+package-lock.json
+node_modules
