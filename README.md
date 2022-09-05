@@ -38,7 +38,7 @@ npm install
 ```
 
 - Wait for all the dependencies to be installed
-- Fill THe [config.js](https://github.com/Synix-Studios/SynixIA/blob/main/config.js) File
+- Fill THe [config.js](https://github.com/Synix-Studios/SynixIA/blob/main/config.example.js) File
 - Type `npm run start` or `npm run dev` to start the bot
 
 ## Contributing
