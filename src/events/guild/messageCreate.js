@@ -23,7 +23,7 @@ module.exports = async (client, message) => {
 
         if (message.author.bot && cmd._permissions.allowBot !== true) return;
 
-        const _userData = await client.fetchUser(message.author)
+        const _userData = await client.fetchUser_(message.author)
 
         if (![4, 5].includes(_userData._datas._roles._isIntern.type)) {
             client.log.event(`${message.author.id} Has Run The ${commandName} But He Isn't Whitelisted.`)

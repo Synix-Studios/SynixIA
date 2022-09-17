@@ -12,12 +12,12 @@ module.exports = async (client) => {
                     continue;
                 }
                 if (slashFiles.newStructure.name) {
-                    if (slashFiles.newStructure.isSlashCmd === true) {
+                    if (slashFiles.newStructure._slash.isSlashCmd === true) {
                         client.slashCommands.set(slashFiles.newStructure.name, slashFiles);
                         arrayOfSlashCommands.push({
                             name: slashFiles.newStructure.name,
-                            description: slashFiles.newStructure.description,
-                            options: slashFiles.newStructure.options
+                            description: slashFiles.newStructure._slash.description,
+                            options: slashFiles.newStructure._slash.options
                         })
                         nFiles++
                         client.log.log(`Loaded ${file}.`)

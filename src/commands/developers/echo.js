@@ -27,7 +27,7 @@ module.exports.newStructure = {
         isEnabled: true// isCommand Enabled
     },
     _slash: { // Slash Settings
-        isEnabled: false, // isSlash Enabled
+        isSlashCmd: false, // isSlash Enabled
         ephemeral: true, // ephmeral ???
         options: [ // Slash options
             {

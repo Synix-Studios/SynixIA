@@ -1,4 +1,5 @@
 const { EmbedBuilder } = require('discord.js')
+const os = require('node:os');
 
 const Excellent_Conection = '<:conection_good:969397647720984616>'
 const medium_Connection = '<:conection_medium:969397647754543144>'
@@ -54,31 +55,46 @@ module.exports._src = {
     }
   },
 
-  async slash(client, interaction) {
+  async newSlashCmd(client, interaction) {
     try {
-      try {
-        await interaction.reply({ content: "Pinging...", ephemeral: false }).catch(() => { });
-        await interaction.fetchReply();
+      console.log(os.cpus())
+      await interaction.reply({ content: "Pinging...", ephemeral: true }).catch(() => { });
+      await interaction.fetchReply();
 
-        const Embed = new Discord.EmbedBuilder()
-          .setColor(client.config.embeds._colors.default)
-          .setAuthor({ name: `${interaction.user.username}`, iconURL: interaction.user.displayAvatarURL() })
-          .addFields(
-            {
-              name: '<:Info:969407482168500244> STATUS INFO', value: `
-              ${Date.now() - interaction.createdTimestamp < low ? Excellent_Conection : Date.now() - interaction.createdTimestamp < hight && Date.now() - interaction.createdTimestamp > low ? medium_Connection : bad_Conection} • **Synix's Ping:** \`${Math.floor(Date.now() - interaction.createdTimestamp)}ms\`
-              ${client.ws.ping < low ? Excellent_Conection : client.ws.ping < hight && client.ws.ping > low ? medium_Connection : bad_Conection} • **Discord API:** \`${Math.round(client.ws.ping)}ms\`
-              ${Excellent_Conection} • **DataBase:** ${`\`${Math.round(Math.random() * (4 - 1) + 1)}ms\``}
-              `
-            },
-          )
-
-        await interaction.editReply({ content: "\u200B", ephemeral: false }).catch(() => { });
-        await interaction.editReply({ embeds: [Embed], ephemeral: false }).catch(() => { });
-      } catch (err) {
-        client.log.error(`${err}`)
-        throw new Error(err)
-      }
+      await interaction.editReply({ content: "\u200B", ephemeral: false }).catch(() => { });
+      await interaction.editReply({
+        embeds: [
+          new EmbedBuilder()
+            .setTitle('<:icons_pings:969405245560082552> Synix Status Info')
+            .setDescription('hai')
+            .addFields([
+              {
+                name: '<:timeout:1001286442208727113> Uptime',
+                value: `<:timeout:1001286442208727113> • <t:${Math.floor(client.readyAt / 1000)}` + ':R>',
+                inline: false
+              },
+              {
+                name: '<:icons_pings:969405245560082552> Server',
+                value: `${Date.now() - interaction.createdTimestamp < low ? Excellent_Conection : Date.now() - interaction.createdTimestamp < hight && Date.now() - interaction.createdTimestamp > low ? medium_Connection : bad_Conection} • \`${Math.floor(Date.now() - interaction.createdTimestamp)}ms\``,
+                inline: true
+              },
+              {
+                name: '<:icons_pings:969405245560082552> Discord API',
+                value: `${client.ws.ping < low ? Excellent_Conection : client.ws.ping < hight && client.ws.ping > low ? medium_Connection : bad_Conection} • \`${Math.round(client.ws.ping)}ms\``,
+                inline: true
+              },
+              {
+                name: '<:icons_pings:969405245560082552> DataBase',
+                value: `${Excellent_Conection} • \`${Math.round(Math.random() * (4 - 1) + 1)}ms\``,
+                inline: true
+              }
+            ],
+            )
+            .setTimestamp()
+            .setFooter({ text: 'Hello World!' })
+            .setColor(client.config.embeds._colors.default)
+        ], ephemeral: false
+      }).catch(() => { });
     } catch (err) {
       client.log.error(`${err}`)
       throw new Error(err)
@@ -100,15 +116,11 @@ module.exports.newStructure = {
     isEnabled: true// isCommand Enabled
   },
   _slash: { // Slash Settings
-    isEnabled: false, // isSlash Enabled
+    isSlashCmd: true, // isSlash Enabled
     ephemeral: true, // ephmeral ???
+    name: 'ping',
+    description: "returns ping",
     options: [ // Slash options
-      {
-        name: 'echo',
-        description: "Return Echo",
-        type: 6,
-        required: false
-      }
     ],
   },
   _timeout: { // timeout
