@@ -1,7 +1,16 @@
-# Config File
+# Protection
 config.js
 
-# OSX
+# Logs Files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Mac OSX
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -13,11 +22,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
-# LOGS
-logs
-*.log
-
 # Dependency directory
 package-lock.json
 node_modules
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-tes
