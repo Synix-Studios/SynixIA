@@ -57,7 +57,6 @@ module.exports._src = {
 
   async newSlashCmd(client, interaction) {
     try {
-      console.log(os.cpus())
       await interaction.reply({ content: "Pinging...", ephemeral: true }).catch(() => { });
       await interaction.fetchReply();
 
